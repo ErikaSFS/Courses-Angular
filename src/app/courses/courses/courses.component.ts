@@ -17,6 +17,9 @@ export class CoursesComponent  {
   constructor(
     public dialog: MatDialog,
     private coursesService: CoursesService)  {
+
+
+      
     //this.courses = [];
     this.courses$ = this.coursesService.list()
     .pipe(
