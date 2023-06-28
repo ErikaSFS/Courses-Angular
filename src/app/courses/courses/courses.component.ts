@@ -12,7 +12,7 @@ import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/err
 export class CoursesComponent  {
 
   courses$: Observable<Course []>;
-  displayedColumns = ['name', 'category'];
+  displayedColumns = ['name', 'category', 'actions'];
 
   constructor(
     public dialog: MatDialog,
