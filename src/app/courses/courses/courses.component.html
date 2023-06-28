@@ -29,7 +29,8 @@
     <!-- Action Columns -->
     <ng-container matColumnDef="actions">
       <mat-header-cell *matHeaderCellDef>
-        <button mat-mini-fab color="accent" aria-label="Adiconar um curso">
+        <button mat-mini-fab color="accent" aria-label="Adiconar um curso"
+        (click)=onAdd() >
       
             <mat-icon>add</mat-icon>
         </button>
@@ -38,7 +39,6 @@
 
       <mat-cell *matCellDef="let course">
         <button mat-icon-button color="primary" aria-label="Editar curso">
-     
           <mat-icon>edit</mat-icon> 
         </button>
 
