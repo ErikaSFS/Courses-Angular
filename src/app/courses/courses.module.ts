@@ -18,7 +18,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     CoursesRoutingModule,
     AppMaterialModule,
-    SharedModule,
+    SharedModule, ////importa o sharedModule e por isso etá importando tudo que está no referido modulo
+    // o que inclui os imports do angularMaterial que estão em app-material-imports.module.ts;, bem como
+    // o componente dialog de erro e o pipe para o icone do tipo/categoria de curso
     ReactiveFormsModule
    
   ]
